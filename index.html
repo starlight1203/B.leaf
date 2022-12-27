@@ -14,7 +14,21 @@
 	<img src="B.leaf_LOGO.jpg" alt="logo" width="200" height="200">
 	
 	<a href="https://starlight1203.github.io/B.leaf/Classic_Brownies.html"><img src="Classic.jpg" alt="classic" width="200" height="200"></a>
-	
 	<img src="nuts.jpg" alt="nuts" width="200" height="200">
+	<input class="prompttest" type="button" value="nuts.jpg">
+
+<script>
+		var button = document.querySelector('.prompttest');
+		function popup(e){
+			var order = window.prompt("您好！請問您想訂購幾個堅果布朗尼?");
+		if(order == null || ""){
+			showtxt.innerHTML = "您已取消訂購"
+		} else{
+			showtxt.innerHTML = "您已將" + order + "個堅果布朗尼加進購物車"
+		}
+	}
+	button.addEventListener('click',popup);
+</script>
+	
 </body>
 </html>
